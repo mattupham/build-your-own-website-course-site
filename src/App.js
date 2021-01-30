@@ -1,11 +1,20 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
+import Banner from "./Banner/Banner";
+import About from "./About/About";
+import Theme from "./Theme/Theme";
+import Projects from "./Projects/Projects";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <Theme>
+      <div className="App">
+        <Navbar />
+        <Banner />
+        <About />
+        <Projects />
+      </div>
+    </Theme>
   );
 }
 
