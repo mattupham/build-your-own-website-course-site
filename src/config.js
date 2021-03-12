@@ -3,20 +3,20 @@ import Bold from "./Shared/Bold";
 const config = {
   navItems: [
     {
-      title: "Home",
-      link: "",
-    },
-    {
       title: "Email",
       link: "",
     },
     {
       title: "Github",
-      link: "",
+      link: "https://github.com/mattupham",
     },
     {
       title: "LinkedIn",
-      link: "",
+      link: "https://www.linkedin.com/in/mattupham",
+    },
+    {
+      title: "Socials",
+      link: "https://links.mattupham.com",
     },
   ],
   banner: {

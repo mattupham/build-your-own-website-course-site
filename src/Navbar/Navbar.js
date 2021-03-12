@@ -83,7 +83,12 @@ const Navbar = (props) => {
     <NavContainer>
       <div className="topnav" id="myTopnav">
         {props.navItems.map((navItem, index) => (
-          <a key={index} href={navItem.link}>
+          <a
+            key={index}
+            href={navItem.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {navItem.title}
           </a>
         ))}
