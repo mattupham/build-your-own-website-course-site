@@ -36,46 +36,22 @@ const TextContainer = styled(Flex)`
   }
 `;
 
-const Banner = () => (
+const Banner = (props) => (
   <Container>
     <Title>Projects</Title>
     <Paragraph style={{ marginBottom: "50px" }}>
       Projects I've been working on lately
     </Paragraph>
     <TextContainer>
-      <Project
-        src={"./project1.png"}
-        alt="Personal Website"
-        title="Personal Website"
-        description={[
-          "TypeScript, React, Next.js, NodeJS",
-          <br />,
-          <br />,
-          "My Personal Website, which includes information about who I am, what mysocial media accounts are, and subscribe to my monthly newsletter!",
-        ]}
-      />
-      <Project
-        src={"./project2.png"}
-        alt="Discord Bot"
-        title="Discord Bot"
-        description={[
-          "TypeScript, NodeJS, Discord.js",
-          <br />,
-          <br />,
-          "My Discord community bot, which onboards people into the community, promps them to introduce themselves, and provides commands for staff",
-        ]}
-      />
-      <Project
-        src={"./project3.png"}
-        alt="My Links Site"
-        title="My Links Site"
-        description={[
-          "TypeScript, NodeJS, Discord.js",
-          <br />,
-          <br />,
-          "My custom link site, where people can click through to any of my social media sites. They can also subscribe to my newsletter!",
-        ]}
-      />
+      {props.projects.map((project, index) => (
+        <Project
+          key={index}
+          src={project.projectSrc}
+          alt={project.projectAlt}
+          title={project.projectTitle}
+          description={project.projectDescription}
+        />
+      ))}
     </TextContainer>
   </Container>
 );

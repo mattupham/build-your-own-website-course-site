@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Paragraph from "../Shared/Paragraph";
-import Bold from "../Shared/Bold";
 
 const Flex = styled.div`
   display: flex;
@@ -56,17 +55,14 @@ const ImageContainer = styled(Flex)`
   width: 100%;
 `;
 
-const Banner = () => (
+const Banner = (props) => (
   <Container>
     <TextContainer>
-      <Title>Hi 👋 I'm Matt Upham</Title>
-      <Paragraph>
-        A Silicon Valley <Bold>software engineer</Bold> who specializes in web
-        development.
-      </Paragraph>
+      <Title>{props.banner.bannerTitle}</Title>
+      <Paragraph>{props.banner.bannerParagraph}</Paragraph>
     </TextContainer>
     <ImageContainer>
-      <Image src="./profile.png" />
+      <Image src={props.banner.bannerImagePath} />
     </ImageContainer>
   </Container>
 );

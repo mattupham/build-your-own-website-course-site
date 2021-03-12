@@ -69,9 +69,7 @@ const TextContainer = styled(Flex)`
     align-items: center;
   }
   max-width: 33.33%;
-
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 `;
 

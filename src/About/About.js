@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Paragraph from "../Shared/Paragraph";
-import Bold from "../Shared/Bold";
 
 const Flex = styled.div`
   display: flex;
@@ -43,16 +42,11 @@ const TextContainer = styled(Flex)`
   }
 `;
 
-const Banner = () => (
+const Banner = (props) => (
   <Container>
     <TextContainer>
-      <Title>About Me</Title>
-      <Paragraph>
-        I'm a software engineer with a passion for learning, teaching, and
-        creating content on social media. My favorite technologies right now are{" "}
-        <Bold>TypeScript, React, HTML, CSS, Python, and Flask</Bold>. I love
-        coding because it's both technical, and creative!
-      </Paragraph>
+      <Title>{props.about.aboutTitle}</Title>
+      <Paragraph>{props.about.aboutParagraph}</Paragraph>
     </TextContainer>
   </Container>
 );

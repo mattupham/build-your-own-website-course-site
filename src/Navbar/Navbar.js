@@ -70,7 +70,7 @@ const NavContainer = styled.div`
   }
 `;
 
-const Navbar = () => {
+const Navbar = (props) => {
   const openNav = () => {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -82,12 +82,11 @@ const Navbar = () => {
   return (
     <NavContainer>
       <div className="topnav" id="myTopnav">
-        <a href="#home" className="active">
-          Home
-        </a>
-        <a href="#about">About</a>
-        <a href="/">Github</a>
-        <a href="/">LinkedIn</a>
+        {props.navItems.map((navItem, index) => (
+          <a key={index} href={navItem.link}>
+            {navItem.title}
+          </a>
+        ))}
         <a href className="icon" onClick={openNav}>
           <i className="fa fa-bars"></i>
         </a>
