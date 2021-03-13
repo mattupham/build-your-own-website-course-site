@@ -5,8 +5,16 @@ import About from "./About/About";
 import Theme from "./Theme/Theme";
 import Projects from "./Projects/Projects";
 import config from "./config";
+import mailgo from "mailgo";
+import React from "react";
 
 function App() {
+  React.useEffect(() => {
+    mailgo({
+      dark: true,
+      showFooter: false,
+    });
+  }, []);
   return (
     <Theme>
       <div className="App">

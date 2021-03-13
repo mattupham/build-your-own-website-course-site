@@ -3,8 +3,9 @@ import Bold from "./Shared/Bold";
 const config = {
   navItems: [
     {
-      title: "Email",
-      link: "",
+      title: "Contact",
+      // follow this format: mailto:youremail@website.com
+      link: "mailto:hello@mattupham.com",
     },
     {
       title: "Github",

@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Instructions for Deployment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Create an account on GitHub
+2. Go to github [repo link](https://github.com/mattupham/build-your-own-website-course-site), click fork
+3. Copy link to your forked repository
+4. Sign in to github from code sandbox
+5. Click Github icon
+6. Click "Open the Github import"
+7. Update config.js with your custom text / image links
+8. Go to deployment
+9. Create either a Netlify / Vercel account
+10. Click either "Deploy with Netlify" or "Deploy with Vercel"
+11. Click visit site
+12. Claim site
+13. Optional: map your own domain
+
+# Create React App Docs
 
 ## Available Scripts
 
@@ -13,11 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
